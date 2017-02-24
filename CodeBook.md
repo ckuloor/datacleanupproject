@@ -70,7 +70,7 @@ source("run_analysis.R")
 ## Description of the result data 
 
 ### The subjects
-The subjects/participants were given as integers ranging from 1 to 30 in the original data set. There were no other descriptions available about the subjects. Hence the result is also be using those number for subjects.
+The subjects/participants were given as integers ranging from 1 to 30 in the original data set. There were no other descriptions available about the subjects. Hence the result is also using those number for subjects.
 
 ### The activities
 There are 6 unique activities.  They were given as numbers ranging from 1 to 6 in the original data set. However, there was an additional file available that had the labels for each activity. Hence the tied up is using the descriptive labels in the file instead of the original numbers.
