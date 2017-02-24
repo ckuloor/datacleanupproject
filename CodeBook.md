@@ -63,7 +63,8 @@ Take the R approach to consolidate data from various files, subset the required 
 
 ### The R code
 
-The source code in R language for the above cleanup process is placed in the [run_analysis.R] (https://github.com/ckuloor/datacleanupproject/blob/master/run_analysis.R)
+The source code in R language for the above cleanup process is placed in the [run_analysis.R] (https://github.com/ckuloor/datacleanupproject/blob/master/run_analysis.R). To exeucte this script, simply run the following in R:
+
 source("run_analysis.R")
 
 ## Description of the result data 
