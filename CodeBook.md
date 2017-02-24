@@ -3,14 +3,18 @@
 ## Overview
 This code book describes the input dataset, the requirements and transformation work performed to clean up the input dataset, variables and the data. This work was done as a partial fulfilment of the requirements for the Getting and Cleaning Data Course project.
 In this project, a raw data set on human activity recognition was provided as the input. The raw was not very well organized and not descriptive enough to be used in any analysis as is. So, the goal was to clean that data set up to be used for further analysis.
+
 As it described in the University of California Irvine's Human Activity Recognition web site, 
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
 Data Set Information:
 "The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain."
+
 The raw dataset was downloaded from the above URL and further processing is done through several steps to come up with a tidy dataset that is more descriptive and usable for further analysis.  The cleanup process and the resulting data set is described in details in the following sections.
 
 ##The data cleanup process
+
 The description of the data cleanup process carried out in this project is broken down into the following sub-sections. 
 
 ###The raw data
@@ -41,18 +45,6 @@ The given raw input dataset had all the required data but scattered around in mu
 ###The solution
 
 Take the R approach to consolidate data from various files, subset the required variables and provide more descriptive headers so that it will be easier for further analysis
-*	/test - This f*lder has the files f*r the measurements and c*rresp*nding subject and activity data f*r the test data set
-*	subject_test.txt - The subjects f*r the test *bservati*ns
-*	X_test.txt - The measurements f*r the test *bservati*ns
-*	Y_test.txt - The activities f*r the test *bservati*ns
-*	/train
-*	subject_train.txt - The subjects f*r the test *bservati*ns
-*	X_train.txt - The measurements f*r the test *bservati*ns
-*	Y_train.txt - The activities f*r the test *bservati*ns
-*	features.txt - The full list *f measurements variables captured in each *bservati*n
-*	feature_inf*.txt - A file that describes the feature vect*rs used in the HAR study
-*	activity_labels.txt -  The unique list *f human activities *bserved as part *f this study.
-*	README.txt - The README file describing the dataset.
 
 ### The process
 
@@ -69,10 +61,11 @@ Take the R approach to consolidate data from various files, subset the required 
 *	As a final step, the subset data is next aggregated by activity and subject columns to calculate the mean on all the selected measurements.
 *	The resulting data set is saved into a HAR_Tidy_Data.csv files using the comma as the separator.
 
-### R code
+### The R code
 
 The source code in R language for the above cleanup process is placed in the run_analysis.R 
 To run this code, simply place the run_analysis.R file in your working directory and execute the R command: 
+
 source("run_analysis.R")
 
 ## Description of the result data 
