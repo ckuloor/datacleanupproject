@@ -73,12 +73,12 @@ source("run_analysis.R")
 The subjects/participants were given as integers ranging from 1 to 30 in the original data set. There were no other descriptions available about the subjects. Hence the result is also be using those number for subjects.
 The activities
 There are 6 unique activities.  They were given as numbers ranging from 1 to 6 in the original data set. However, there was an additional file available that had the labels for each activity. Hence the tied up is using the descriptive labels in the file instead of the original numbers.
-1 - WALKING
-2 - WALKING_UPSTAIRS
-3 - WALKING_DOWNSTAIRS
-4 - SITTING
-5 - STANDING
-6 - LAYING
+* 1 - WALKING
+* 2 - WALKING_UPSTAIRS
+* 3 - WALKING_DOWNSTAIRS
+* 4 - SITTING
+* 5 - STANDING
+* 6 - LAYING
 
 ### The measurement variables 
 
